@@ -9,7 +9,7 @@ export function Header() {
     <header className="flex justify-between items-center p-4 bg-zinc-900">
       <div className="flex items-center gap-2">
         <Volume2 className="h-6 w-6 text-orange-500" />
-        <h1 className="text-xl font-bold">RhythmoTune</h1>
+        <h1 className="text-xl font-bold">Playlist</h1>
       </div>
       <Link href="/upload">
         <Button size="icon" variant="ghost" className="hover:text-orange-500">

@@ -28,7 +28,7 @@ export function Header() {
       }
     };
     fetchUserData();
-  }, []);
+  }, [token]);
 
   const handleLogout = () => {
     localStorage.clear();

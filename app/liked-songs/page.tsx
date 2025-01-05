@@ -1,14 +1,13 @@
 import { Header } from "@/components/Header";
 import { SongGrid } from "@/components/SongGrid";
-import { PlayerBar } from "@/components/PlayerBar";
-import DefaultSongGrid from "@/components/DefaultSongGrid";
+import React from "react";
 
-export default function Home() {
+export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
       <div className="p-8">
-        <DefaultSongGrid />
+        <SongGrid />
       </div>
       {/* <PlayerBar /> */}
     </main>

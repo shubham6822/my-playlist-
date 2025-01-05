@@ -4,7 +4,6 @@ export const dynamic = 'force-dynamic';  // This forces dynamic handling
 
 export const POST = async (req: Request) => {
   const { code } = await req.json();
-  console.log("code",code);
   
   const clientId = process.env.SPOTIFY_CLIENT_ID!;
   const clientSecret = process.env.SPOTIFY_CLIENT_SECRET!;

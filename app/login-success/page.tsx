@@ -51,7 +51,7 @@ export default function Page() {
 
   const router = useRouter();
   const handleBackToHome = () => {
-    router.push("/liked-songs");
+    router.push("/liked");
   };
 
   return (

@@ -8,11 +8,11 @@ import { useRouter } from "next/navigation";
 export function Header() {
   const router = useRouter();
   const [user, setUser] = useState<any | null>();
-  const token = localStorage.getItem("access_token");
-
+  const [token, setToken] = useState<string | null>();
   useEffect(() => {
     const fetchUserData = async () => {
-      const token = localStorage.getItem("access_token");
+      const acess_token = localStorage.getItem("access_token");
+      setToken(acess_token);
       try {
         const response = await fetch(`/api/user?access_token=${token}`);
         const data = await response.json();
@@ -28,7 +28,7 @@ export function Header() {
       }
     };
     fetchUserData();
-  }, [token]);
+  }, []);
 
   const handleLogout = () => {
     localStorage.clear();
